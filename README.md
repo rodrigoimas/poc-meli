@@ -15,28 +15,29 @@ Ejercicio: En una galaxia lejana, existen tres civilizaciones. Vulcanos Ferengis
 - Las condiciones óptimas de presión y temperatura se dan cuando los tres planetas están alineados entre sí pero no están alineados con el sol.
 
 ## Stack
-Lenguaje: Java 8.
-Framework: Apache Spark.
-ORM: Hibernate 5.
-Db: Postgres 10.
+- Lenguaje: Java 8.
+- Framework: Apache Spark.
+- ORM: Hibernate 5.
+- Db: Postgres 10.
 
 ## Hosting
-App web: Heroku app, processType web
-Postgres Db: Heroku Addon --> heroku-postgresql
-Cron: Heroku Addon --> Scheduler
-Heroku
+- App web: Heroku app, processType web
+- Postgres Db: Heroku Addon --> heroku-postgresql
+- Cron: Heroku Addon --> Scheduler
 
 ## Uso
 Para usar el programa de línea de comandos, una vez instalado, se ejecuta como cualquier jar (java -jar <filename>.jar). Queda levantado un servlet que responde en el puerto 5432 (puerto por defecto de Spark).
 
 A continuación, se detallan las urls válidas de la aplicación web.
 
-### Cálculo del pronóstico: se invoca la siguiente url para calcular el pronóstico donde se debe reemplazar <cantidad_dias> por la cantidad de dias de pronostico que se desea obtener.
+### Cálculo del pronóstico
+Se invoca la siguiente url para calcular el pronóstico donde se debe reemplazar <cantidad_dias> por la cantidad de dias de pronostico que se desea obtener.
 
 URL local: http://localhost:4567/pronostico?dias=<cantidad_dias>
 URL pública: https://solar-meli-web.herokuapp.com/pronostico?dias=<cantidad_dias>
 
-### Búsqueda de clima para un día: se invoca la siguiente url para consultar el clima en un día en particular, donde se debe reemplazar <dia> por el número de día del que se desea conocer el clima. Si el pronóstico no se calculo para el día consultado, devuelve un error (http code 400 Bad Request) con el detalle de este error.
+### Búsqueda de clima para un día
+Se invoca la siguiente url para consultar el clima en un día en particular, donde se debe reemplazar <dia> por el número de día del que se desea conocer el clima. Si el pronóstico no se calculo para el día consultado, devuelve un error (http code 400 Bad Request) con el detalle de este error.
 
 URL local: http://localhost:4567/clima?dia=<dia>
 URL pública: https://solar-meli-web.herokuapp.com/clima?dia=<dia>
