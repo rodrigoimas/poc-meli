@@ -1,7 +1,5 @@
 # poc-meli
-Ejercicio: # VULCANOS
-
-En una galaxia lejana, existen tres civilizaciones. Vulcanos Ferengis y Betasoides. Cada civilización vive en paz en su respectivo planeta.
+Ejercicio: En una galaxia lejana, existen tres civilizaciones. Vulcanos Ferengis y Betasoides. Cada civilización vive en paz en su respectivo planeta.
 
 ## Suposiciones
 - En el día 0, los tres planetas se encuentran alineados a 90 grados..
