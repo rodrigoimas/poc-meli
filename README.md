@@ -42,7 +42,7 @@ Se invoca la siguiente url para consultar el clima en un día en particular, don
 URL local: http://localhost:4567/clima?dia=<dia>
 URL pública: https://solar-meli-web.herokuapp.com/clima?dia=<dia>
 
-##Persistencia
+## Persistencia
 Cada vez que se calcula el pronóstico, se persisten los resultados en la base de datos. Si se ejecuta el pronóstico más de una vez, se eliminan los resultados anteriores de la base de datos y quedan los resultados del último pronóstico calculado.
 
 El servidor web hace uso de PostgreSQL, por lo que tiene configuradas las siguientes propiedades en el profile por defecto del pom.xml:
@@ -54,10 +54,10 @@ db.password=meli20190225
 
 Se incluye el script de la creación del modelo de dominio en /main/resource/dbscript.
 
-##Job
+## Job
 
 Para ejecutar el job que pronostica los próximos 10 años, existe un Heroku Scheduler que se ejecuta diariamente a las 03.00 UTC con una invocación a la misma url que invoca para generar el pronóstico con el parámetro <cantidad_dias> seteado en 3600 (360 días x 10 años).
 
-##Otros detalles
+## Otros detalles
 
 Tanto para la obtención del string de conexión a Postgres on Heroku como del puerto http del servidor web de Heroku, se hizo uso de variables de entorno disponibilizadas por Heroku.
