@@ -10,7 +10,6 @@ import javax.persistence.Table;
 @Table(name="Pronostico", schema = "solar")
 public class Pronostico {
 
-//	@GeneratedValue(strategy = GenerationType.AUTO)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
 	int id;

@@ -66,9 +66,6 @@ public class UtilClima {
 	}
 	
 	private static  boolean estanAlineados (PosicionDTO p1, PosicionDTO p2, PosicionDTO p3) {
-//		System.out.println("p1=" + p1 + "\np2=" + p2 + "\np3=" + p3);
-//		System.out.println("pendiente p1_p2=" + p1.getPendienteAUnPunto(p2));
-//		System.out.println("pendiente p1_p3=" + p1.getPendienteAUnPunto(p3));
 		return p1.getPendienteAUnPunto(p2) == p1.getPendienteAUnPunto(p3);
 	}
 

@@ -52,27 +52,6 @@ public class PronosticoDAOImpl implements PronosticoDAO {
 	}
 
 	@Override
-	public Pronostico buscarPronostico(long dia) {
-		// TODO Auto-generated method stub
-//		Criteria filtro;
-//		em.createQuery(filtro);
-//		em.createQuery()
-//		
-//		
-//		bob bb=null;
-//
-//		CriteriaQuery<Pronostico> criteria = em.getCriteriaBuilder().createQuery(Pronostico.class);
-//		criteria.equals(obj)
-//		em.createQuery(arg0)
-//		em.getCriteriaBuilder().createQuery();
-//	    Criteria criteria = em.getCriteriaBuilder().
-//	    getEntityManager().createQuery(arg0)
-//	    criteria.add(Restrictions.eq("id",dia));
-//	    bb = (bob) criteria.uniqueResult();
-		return null;
-	}
-
-	@Override
 	public void grabarPronostico(Pronostico pronostico) {
 		EntityTransaction tx = getEntityManager().getTransaction();
 		tx.begin();

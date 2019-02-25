@@ -61,7 +61,7 @@
 			<properties>
 				<db.url>jdbc:postgresql://localhost:5432/postgres</db.url>
 				<db.username>postgres</db.username>
-				<db.password>Funciona25</db.password>
+				<db.password>meli20190225</db.password>
 			</properties>
 			<build>
 				<resources>
@@ -100,7 +100,7 @@
 			<properties>
 				<db.url>jdbc:postgresql://localhost:5432/postgres</db.url>
 				<db.username>postgres</db.username>
-				<db.password>Funciona25</db.password>
+				<db.password>meli20190225</db.password>
 			</properties>
 			<build>
 				<resources>
