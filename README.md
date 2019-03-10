@@ -33,14 +33,18 @@ A continuación, se detallan las urls válidas de la aplicación web.
 ### Cálculo del pronóstico
 Se invoca la siguiente url para calcular el pronóstico donde se debe reemplazar <cantidad_dias> por la cantidad de dias de pronostico que se desea obtener.
 
+```
 URL local: http://localhost:4567/pronostico?dias=<cantidad_dias>
 URL pública: https://solar-meli-web.herokuapp.com/pronostico?dias=<cantidad_dias>
+```
 
 ### Búsqueda de clima para un día
 Se invoca la siguiente url para consultar el clima en un día en particular, donde se debe reemplazar <dia> por el número de día del que se desea conocer el clima. Si el pronóstico no se calculo para el día consultado, devuelve un error (http code 400 Bad Request) con el detalle de este error.
 
+```
 URL local: http://localhost:4567/clima?dia=<dia>
 URL pública: https://solar-meli-web.herokuapp.com/clima?dia=<dia>
+```
 
 ## Persistencia
 Cada vez que se calcula el pronóstico, se persisten los resultados en la base de datos. Si se ejecuta el pronóstico más de una vez, se eliminan los resultados anteriores de la base de datos y quedan los resultados del último pronóstico calculado.
