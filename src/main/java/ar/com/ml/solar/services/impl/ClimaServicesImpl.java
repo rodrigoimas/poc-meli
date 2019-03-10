@@ -128,19 +128,19 @@ public class ClimaServicesImpl implements ClimaServices {
 	}
 	
 	private void calcularClima(DiaDTO dia) {
-		System.out.println("Dia nro.=" + dia.getNumero() + ", p1=" + dia.getPosicionPlaneta1().getGrados() + ", p2=" + dia.getPosicionPlaneta2().getGrados() + ", p3=" + dia.getPosicionPlaneta3().getGrados());
+//		System.out.println("Dia nro.=" + dia.getNumero() + ", p1=" + dia.getPosicionPlaneta1().getGrados() + ", p2=" + dia.getPosicionPlaneta2().getGrados() + ", p3=" + dia.getPosicionPlaneta3().getGrados());
 		if (UtilClima.esSequia(dia))	{
 			dia.setClima(ClimaEnum.SEQUIA);
-			System.out.println("\n-----------HAY SEQUIA EN EL DIA-------------");
-			System.out.println(dia+"\n");
+//			System.out.println("\n-----------HAY SEQUIA EN EL DIA-------------");
+//			System.out.println(dia+"\n");
 		} else if (UtilClima.esOptimo (dia, posicionSol)) {
 			dia.setClima(ClimaEnum.OPTIMO);
-			System.out.println("\n-----------HAY CLIMA ÓPTIMO EN EL DIA-------------");
-			System.out.println(dia+"\n");
+//			System.out.println("\n-----------HAY CLIMA ÓPTIMO EN EL DIA-------------");
+//			System.out.println(dia+"\n");
 		} else if (UtilClima.esLluvia (dia, posicionSol)) {
 			dia.setClima(ClimaEnum.LLUVIA);
-			System.out.println("\n-----------HAY LLUVIA EN EL DIA-------------");
-			System.out.println(dia + "\n");
+//			System.out.println("\n-----------HAY LLUVIA EN EL DIA-------------");
+//			System.out.println(dia + "\n");
 		}
 	}
 
